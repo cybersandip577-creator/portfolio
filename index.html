@@ -4,58 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandip Biswas | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #0f172a; color: #f8fafc; }
-        .header { 
-            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-            padding: 60px 20px; text-align: center; border-bottom: 2px solid #38bdf8;
-        }
-        /* Photo Style */
-        .profile-img {
-            width: 250px; height: 250px; border-radius: 50%;
-            border: 4px solid #38bdf8; margin-bottom: 20px; object-fit: cover;
-        }
+        .header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 60px 20px; text-align: center; border-bottom: 2px solid #38bdf8; }
+        .profile-img { width: 200px; height: 200px; border-radius: 50%; border: 4px solid #38bdf8; margin-bottom: 20px; object-fit: cover; }
         h1 { font-size: 2.5rem; color: #38bdf8; margin: 0; text-transform: uppercase; }
         .container { max-width: 900px; margin: 40px auto; padding: 20px; }
-        .card { background: #1e293b; padding: 25px; border-radius: 15px; margin-bottom: 25px; }
-        h2 { color: #38bdf8; border-left: 4px solid #38bdf8; padding-left: 15px; }
+        .card { background: #1e293b; padding: 25px; border-radius: 15px; margin-bottom: 25px; border-left: 4px solid #38bdf8; }
+        h2 { color: #38bdf8; margin-top: 0; display: flex; align-items: center; gap: 10px; }
         .skill-tag { 
-            background: rgba(56, 189, 248, 0.1); border: 1px solid #38bdf8;
-            color: #38bdf8; padding: 8px 15px; border-radius: 50px;
-            display: inline-block; margin: 5px; font-weight: bold;
+            background: rgba(56, 189, 248, 0.1); border: 1px solid #38bdf8; color: #38bdf8; 
+            padding: 10px 20px; border-radius: 50px; display: inline-flex; align-items: center; 
+            gap: 8px; margin: 5px; font-weight: bold; text-decoration: none; transition: 0.3s;
         }
-        /* WhatsApp Button */
-        .whatsapp-btn {
-            display: inline-block; background: #25d366; color: white;
-            padding: 12px 25px; border-radius: 5px; text-decoration: none;
-            font-weight: bold; margin-top: 10px; transition: 0.3s;
+        .skill-tag:hover { transform: translateY(-5px); background: #38bdf8; color: #0f172a; }
+        .whatsapp-btn { 
+            display: inline-block; background: #25d366; color: white; padding: 12px 25px; 
+            border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px; transition: 0.3s; 
         }
         .whatsapp-btn:hover { transform: scale(1.05); background: #128c7e; }
     </style>
 </head>
 <body>
-
     <div class="header">
         <img src="my-photo.jpg" alt="Sandip Biswas" class="profile-img">
         <h1>SANDIP BISWAS</h1>
-        <p style="color: #94a3b8;">IT Infrastructure | Maintenance Lead | Automation Specialist</p>
+        <p>IT Infrastructure | Maintenance Lead | Solutions Expert</p>
     </div>
 
     <div class="container">
-       <div class="card">
-            <h2>Technical Stack</h2>
-            <div class="skill-container">
-                <a href="https://www.ezeetechnosys.com/" target="_blank" class="skill-tag" style="text-decoration: none; display: inline-block;">eZee FrontDesk</a>
-                <a href="https://www.ezeetechnosys.com/ezee-burrp-restaurant-pos-software/" target="_blank" class="skill-tag" style="text-decoration: none; display: inline-block;">eZee Burrp</a>
-                <a href="https://www.hikvision.com/" target="_blank" class="skill-tag" style="text-decoration: none; display: inline-block;">Hikvision NVR</a>
-                <a href="https://www.python.org/" target="_blank" class="skill-tag" style="text-decoration: none; display: inline-block;">Python Automation</a>
+        <div class="card">
+            <h2><i class="fas fa-microchip"></i> Technical Stack</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <a href="https://www.ezeetechnosys.com/" target="_blank" class="skill-tag"><i class="fas fa-hotel"></i> eZee FrontDesk</a>
+                <a href="https://www.ezeetechnosys.com/ezee-burrp-restaurant-pos-software/" target="_blank" class="skill-tag"><i class="fas fa-utensils"></i> eZee Burrp</a>
+                <a href="https://www.hikvision.com/" target="_blank" class="skill-tag"><i class="fas fa-video"></i> Hikvision NVR</a>
+                <a href="https://www.python.org/" target="_blank" class="skill-tag"><i class="fab fa-python"></i> Python Automation</a>
             </div>
         </div>
-            <h2>Contact Me</h2>
-            <p>Click the button below to send me a direct message on whatsapp:</p>
-            <a href="https://wa.me/918900953522"class="whatsapp-btn" target="_blank">Chat on WhatsApp</a>
+
+        <div class="card" style="text-align: center;">
+            <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+            <p>Click the button below to send me a direct message on WhatsApp:</p>
+            <a href="https://wa.me/918900953522" class="whatsapp-btn" target="_blank">Chat on WhatsApp</a>
         </div>
     </div>
-
 </body>
 </html>
