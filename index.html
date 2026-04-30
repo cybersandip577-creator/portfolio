@@ -1,32 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandip Biswas | Portfolio</title>
     <style>
-        /* CSS: Isse website sundar dikhegi */
-        body { font-family: sans-serif; margin: 0; background-color: #f0f2f5; }
-        .header { background: #1a1a1a; color: white; text-align: center; padding: 50px; }
-        .content { max-width: 900px; margin: 20px auto; background: white; padding: 30px; border-radius: 10px; }
-.skill-tag { background: #e1e1e1; padding: 5px 15px; border-radius: 20px; display: inline-block; margin: 5px; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #0f172a; color: #f8fafc; }
+        .header { 
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            padding: 60px 20px; text-align: center; border-bottom: 2px solid #38bdf8;
+        }
+        /* Photo Style */
+        .profile-img {
+            width: 150px; height: 150px; border-radius: 50%;
+            border: 4px solid #38bdf8; margin-bottom: 20px; object-fit: cover;
+        }
+        h1 { font-size: 2.5rem; color: #38bdf8; margin: 0; text-transform: uppercase; }
+        .container { max-width: 900px; margin: 40px auto; padding: 20px; }
+        .card { background: #1e293b; padding: 25px; border-radius: 15px; margin-bottom: 25px; }
+        h2 { color: #38bdf8; border-left: 4px solid #38bdf8; padding-left: 15px; }
+        .skill-tag { 
+            background: rgba(56, 189, 248, 0.1); border: 1px solid #38bdf8;
+            color: #38bdf8; padding: 8px 15px; border-radius: 50px;
+            display: inline-block; margin: 5px; font-weight: bold;
+        }
+        /* WhatsApp Button */
+        .whatsapp-btn {
+            display: inline-block; background: #25d366; color: white;
+            padding: 12px 25px; border-radius: 5px; text-decoration: none;
+            font-weight: bold; margin-top: 10px; transition: 0.3s;
+        }
+        .whatsapp-btn:hover { transform: scale(1.05); background: #128c7e; }
     </style>
 </head>
 <body>
 
     <div class="header">
+        <img src="my-photo.jpg" alt="Sandip Biswas" class="profile-img">
         <h1>SANDIP BISWAS</h1>
-        <p>IT Professional | Maintenance Lead | Solutions Expert</p>
+        <p style="color: #94a3b8;">IT Infrastructure | Maintenance Lead | Automation Specialist</p>
     </div>
 
-    <div class="content">
-        <h2>About Me</h2>
-        <p>IT aur Maintenance sector mein expert, specialized in hardware, software troubleshooting, aur systems management.</p>
+    <div class="container">
+        <div class="card">
+            <h2>Technical Stack</h2>
+            <div class="skill-tag">eZee FrontDesk</div>
+            <div class="skill-tag">eZee Burrp</div>
+            <div class="skill-tag">Hikvision NVR</div>
+            <div class="skill-tag">Python Automation</div>
+        </div>
 
-        <h2>Technical Skills</h2>
-        <div class="skill-tag">eZee FrontDesk</div>
-        <div class="skill-tag">eZee Burrp</div>
-        <div class="skill-tag">Hikvision NVR</div>
-        <div class="skill-tag">Python & VBA</div>
-        <div class="skill-tag">IT Infrastructure</div>
+        <div class="card" style="text-align: center;">
+            <h2>Contact Me</h2>
+            <p>Direct message ke liye niche button par click karein:</p>
+            <a href="https://wa.me/+91 8101509594/+91 7679522174" class="whatsapp-btn" target="_blank">Chat on WhatsApp</a>
+        </div>
     </div>
 
 </body>
