@@ -3,72 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISLAND IT HUB | IT & Resort AMC Specialist</title>
+    <title>ISLAND IT HUB | Cyber Infrastructure Specialist</title>
     
-    <meta name="description" content="Island IT Hub - Expert CCTV, Networking, and Resort AMC Specialist in Swaraj Dweep (Havelock).">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
-        :root { --primary: #38bdf8; --bg: #020617; --card-bg: rgba(30, 41, 59, 0.7); --accent: #fbbf24; }
+        :root { --primary: #00f2fe; --bg: #010409; --card-bg: rgba(13, 17, 23, 0.9); --accent: #fbbf24; }
         
         body { 
-            font-family: 'Segoe UI', sans-serif; margin: 0; background-color: var(--bg); color: #f8fafc;
-            background-image: radial-gradient(circle at 2px 2px, rgba(56, 189, 248, 0.05) 1px, transparent 0);
-            background-size: 40px 40px;
+            font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0;
+            background-color: var(--bg); color: #c9d1d9;
+            /* PROFESSIONAL HACKER MESH BACKGROUND */
+            background-image: 
+                radial-gradient(circle at 50% 50%, rgba(0, 242, 254, 0.05) 0%, transparent 80%),
+                linear-gradient(rgba(0, 242, 254, 0.08) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 242, 254, 0.08) 1px, transparent 1px);
+            background-size: 100% 100%, 40px 40px, 40px 40px;
+            background-attachment: fixed;
+        }
+
+        /* Scanline Overlay for Hacker Vibe */
+        body::after {
+            content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: repeating-linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1) 1px, transparent 1px, transparent 2px);
+            pointer-events: none; z-index: 999;
         }
 
         .header { 
-            background: linear-gradient(180deg, rgba(15, 23, 42, 0.9) 0%, var(--bg) 100%);
-            padding: 60px 20px 40px; text-align: center;
+            background: rgba(1, 4, 9, 0.95);
+            padding: 60px 20px; text-align: center;
+            border-bottom: 2px solid var(--primary);
+            box-shadow: 0 10px 40px rgba(0, 242, 254, 0.1);
         }
 
-        /* Logo Styling */
         .agency-logo {
-            width: 110px; height: auto; margin-bottom: 20px; filter: drop-shadow(0 0 8px var(--primary));
+            width: 120px; height: auto; margin-bottom: 20px;
+            filter: drop-shadow(0 0 10px var(--primary));
         }
 
         .verified-badge {
-            background: rgba(56, 189, 248, 0.15); border: 1px solid var(--primary); color: var(--primary);
-            padding: 8px 20px; border-radius: 50px; font-size: 0.9rem; font-weight: bold;
-            display: inline-flex; align-items: center; gap: 8px; margin-bottom: 20px;
+            background: rgba(0, 242, 254, 0.1); border: 1px solid var(--primary); color: var(--primary);
+            padding: 8px 25px; border-radius: 5px; font-size: 0.8rem; font-weight: bold;
+            text-transform: uppercase; letter-spacing: 2px; display: inline-flex; align-items: center; gap: 8px;
+            box-shadow: inset 0 0 10px rgba(0, 242, 254, 0.2);
         }
 
         .profile-img { 
-            width: 150px; height: 150px; border-radius: 50%; border: 3px solid var(--primary);
-            box-shadow: 0 0 30px rgba(56, 189, 248, 0.3); margin-bottom: 15px; object-fit: cover;
+            width: 160px; height: 160px; border-radius: 50%; 
+            border: 2px solid var(--primary); margin: 20px 0;
+            box-shadow: 0 0 40px rgba(0, 242, 254, 0.3);
+            object-fit: cover;
         }
 
-        h1 { font-size: 2.8rem; color: white; margin: 10px 0 0 0; letter-spacing: 2px; text-transform: uppercase; }
-        .sub-text { color: var(--primary); font-weight: bold; margin-top: 5px; font-size: 1.1rem; }
+        h1 { font-size: 3.2rem; color: #fff; margin: 0; letter-spacing: 5px; text-shadow: 0 0 20px var(--primary); }
+        .sub-text { color: var(--primary); font-weight: bold; letter-spacing: 3px; font-size: 1rem; opacity: 0.8; }
 
-        .container { max-width: 850px; margin: 20px auto 40px; padding: 20px; }
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
 
+        /* CRYSTAL GLASS CARD */
         .card { 
-            background: var(--card-bg); backdrop-filter: blur(10px); padding: 30px; 
-            border-radius: 20px; margin-bottom: 30px; border: 1px solid rgba(56, 189, 248, 0.1);
+            background: var(--card-bg); border: 1px solid rgba(0, 242, 254, 0.2);
+            padding: 40px; border-radius: 4px; margin-bottom: 30px;
+            backdrop-filter: blur(15px); position: relative;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        .card::before {
+            content: ""; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--primary);
         }
 
         .address-box {
-            background: rgba(56, 189, 248, 0.05); border: 1px dashed var(--primary);
-            padding: 20px; border-radius: 15px; margin-bottom: 30px; text-align: center;
+            background: rgba(251, 191, 36, 0.05); border: 1px dashed var(--accent);
+            padding: 20px; margin-bottom: 30px; text-align: center;
         }
 
-        .amc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .amc-item { background: rgba(255,255,255,0.03); padding: 15px; border-radius: 12px; border-left: 3px solid var(--accent); }
-        .amc-item h3 { color: var(--accent); margin-top: 0; font-size: 1.1rem; }
+        h2 { color: var(--primary); text-transform: uppercase; letter-spacing: 2px; font-size: 1.3rem; margin-bottom: 25px; }
+
+        .amc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .amc-item { 
+            background: rgba(255,255,255,0.02); padding: 20px; border: 1px solid rgba(255,255,255,0.05);
+            transition: 0.3s;
+        }
+        .amc-item:hover { background: rgba(0, 242, 254, 0.05); border-color: var(--primary); }
+        .amc-item h3 { color: var(--accent); margin: 0 0 10px 0; font-size: 1.1rem; }
 
         .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
         .contact-item {
-            background: rgba(56, 189, 248, 0.05); border: 1px solid rgba(56, 189, 248, 0.2);
-            padding: 15px; border-radius: 10px; text-decoration: none; color: white;
-            display: flex; align-items: center; gap: 12px; transition: 0.3s; justify-content: center;
+            background: transparent; border: 1px solid var(--primary);
+            padding: 15px; color: var(--primary); text-decoration: none; 
+            text-align: center; font-weight: bold; transition: 0.4s;
+            text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;
         }
-        .contact-item:hover { background: var(--primary); color: #020617; }
+        .contact-item:hover { background: var(--primary); color: #000; box-shadow: 0 0 20px var(--primary); }
 
         .quote-btn {
-            background: var(--accent) !important; color: #020617 !important;
-            font-weight: bold; padding: 18px 40px; border-radius: 50px; text-decoration: none;
-            display: inline-flex; align-items: center; gap: 10px; margin-top: 25px;
+            background: var(--accent); color: #000; padding: 20px 40px; 
+            text-decoration: none; font-weight: bold; display: inline-block;
+            margin-top: 30px; border-radius: 2px; text-transform: uppercase;
+            box-shadow: 0 0 15px rgba(251, 191, 36, 0.3); transition: 0.3s;
+        }
+        .quote-btn:hover { background: #fff; transform: scale(1.05); }
+
+        .whatsapp-float {
+            position: fixed; width: 60px; height: 60px; bottom: 30px; right: 30px;
+            background: #25d366; color: #fff; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 30px; z-index: 1000; box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);
         }
     </style>
 </head>
@@ -77,74 +117,62 @@
     <div class="header">
         <img src="logo.png" alt="Island IT Hub Logo" class="agency-logo">
         <br>
-        <div class="verified-badge"><i class="fas fa-check-circle"></i> Official Maintenance Partner</div>
+        <div class="verified-badge"><i class="fas fa-terminal"></i> System Authenticated</div>
         <br>
         <img src="my-photo.jpg" alt="Sandip Biswas" class="profile-img">
         <h1>ISLAND IT HUB</h1>
-        <div class="sub-text">IT Infrastructure & Security Systems Specialist</div>
+        <div class="sub-text">Infrastructure Security & Resort AMC Specialist</div>
     </div>
 
     <div class="container">
         
         <div class="address-box">
-            <h3 style="color: var(--primary); margin-top: 0;"><i class="fas fa-map-marker-alt"></i> Registered Office</h3>
-            <p style="font-size: 1.2rem; margin: 5px 0;">Vijay Nagar, Swaraj Dweep (Havelock)</p>
-            <p style="color: var(--accent); font-weight: bold; margin: 0;">Andaman & Nicobar Islands - 744211</p>
+            <h3 style="color: var(--accent); margin: 0; letter-spacing: 1px;"><i class="fas fa-map-marker-alt"></i> HQ: VIJAY NAGAR, HAVELOCK (744211)</h3>
         </div>
 
         <div class="card">
-            <h2><i class="fas fa-handshake"></i> Resort AMC Solutions</h2>
+            <h2><i class="fas fa-microchip"></i> Core Services</h2>
             <div class="amc-grid">
                 <div class="amc-item">
-                    <h3>CCTV & Surveillance</h3>
-                    <p>Routine checks, camera cleaning, and Hikvision NVR optimization.</p>
+                    <h3>CCTV SURVEILLANCE</h3>
+                    <p>Advanced Hikvision NVR/IP configurations and salt-air hardware protection.</p>
                 </div>
                 <div class="amc-item">
-                    <h3>Resort Networking</h3>
-                    <p>High-speed Wi-Fi solutions and structural cabling for hotels.</p>
+                    <h3>NETWORK TOPOLOGY</h3>
+                    <p>Mesh Wi-Fi deployment and fiber-grade internal resort networking.</p>
                 </div>
                 <div class="amc-item">
-                    <h3>Software & POS</h3>
-                    <p>Support for eZee FrontDesk, Burrp, and Biometric systems.</p>
+                    <h3>HOTEL POS SYSTEMS</h3>
+                    <p>Full support for eZee FrontDesk, Burrp, and Biometric authentication.</p>
                 </div>
                 <div class="amc-item">
-                    <h3>Intercom Systems</h3>
-                    <p>Maintenance of EPABX lines and staff communication networks.</p>
+                    <h3>PABX/INTERCOM</h3>
+                    <p>Voice-over-IP and traditional EPABX hotel phone maintenance.</p>
                 </div>
             </div>
             <div style="text-align: center;">
-                <a href="https://wa.me/918101509594?text=Hi%20Island%20IT%20Hub,%20I%20want%20to%20discuss%20an%20AMC%20contract." class="quote-btn">
-                    <i class="fas fa-file-contract"></i> Get Business Inquiry Quote
-                </a>
+                <a href="https://wa.me/918101509594" class="quote-btn">Generate Business Proposal</a>
             </div>
         </div>
 
         <div class="card">
-            <h2><i class="fas fa-pen-nib"></i> Expert Insights</h2>
-            <div style="line-height: 1.8; color: #cbd5e1;">
-                <h3 style="color: white; margin-bottom: 10px;">Why Havelock Resorts Need Specialized IT Maintenance</h3>
-                <p>In the humid climate of Swaraj Dweep, salt air is the biggest enemy of your IT hardware. From CCTV corrosion to Wi-Fi dead zones, we explore how regular maintenance saves thousands in replacement costs. <strong>Island IT Hub</strong> ensures your technology is always ready for your guests.</p>
-            </div>
+            <h2><i class="fas fa-shield-virus"></i> Why Island IT Hub?</h2>
+            <p style="line-height: 1.8;">Our technical protocols are specifically designed for the Andaman environment. We specialize in *hardware longevity* against salt-air corrosion and *zero-downtime* networking for Swaraj Dweep resorts.</p>
         </div>
 
         <div class="card" style="text-align: center;">
-            <h2><i class="fas fa-address-book"></i> Professional Contact</h2>
+            <h2><i class="fas fa-ethernet"></i> Establish Connection</h2>
             <div class="contact-grid">
-                <a href="https://wa.me/918101509594" target="_blank" class="contact-item">
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                </a>
-                <a href="mailto:Cybersandip577@gmail.com" class="contact-item">
-                    <i class="fas fa-envelope"></i> Email
-                </a>
-                <a href="tel:+918101509594" class="contact-item">
-                    <i class="fas fa-phone-alt"></i> Call Now
-                </a>
-                <a href="http://maps.google.com/?q=Vijay+Nagar+Havelock+Andaman" target="_blank" class="contact-item">
-                    <i class="fas fa-map-marked-alt"></i> Location
-                </a>
+                <a href="https://wa.me/918101509594" class="contact-item">WhatsApp</a>
+                <a href="mailto:Cybersandip577@gmail.com" class="contact-item">Email</a>
+                <a href="tel:+918101509594" class="contact-item">Call HQ</a>
+                <a href="http://googleusercontent.com/maps.google.com/4" class="contact-item">Maps</a>
             </div>
         </div>
 
     </div>
+
+    <a href="https://wa.me/918101509594" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+
 </body>
 </html>
