@@ -3,127 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Island IT Hub | Portfolio</title>
+    <title>Island IT Hub Portfolio</title>
     <style>
-        /* CSS - Design aur Layout */
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: radial-gradient(circle at center, #001f3f 0%, #000814 100%);
+            background-color: #050a18; /* Original dark blue background */
             color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            font-family: Arial, sans-serif;
             text-align: center;
         }
 
-        .container {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 40px;
+        .profile-card {
+            padding-top: 50px;
+        }
+
+        .verified-badge {
+            border: 1px solid #007bff;
+            color: #007bff;
+            padding: 5px 20px;
             border-radius: 20px;
-            box-shadow: 0 0 30px rgba(0, 150, 255, 0.2);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            max-width: 600px;
-            width: 90%;
-        }
-
-        .badge {
-            background: #007bff;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 50px;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
             display: inline-block;
-            margin-bottom: 20px;
-            border: 1px solid #00d4ff;
-        }
-
-        /* Logo Styling */
-        .logo-box img {
-            width: 180px;
-            height: auto;
-            margin-bottom: 20px;
-            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
-        }
-
-        /* Title Styling */
-        h1 {
-            font-size: 2.8rem;
-            margin: 0;
-            letter-spacing: 4px;
-            font-weight: 800;
-            background: linear-gradient(to right, #fff, #00d4ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .subtitle {
-            font-size: 1.1rem;
-            color: #00d4ff;
-            margin: 10px 0 30px 0;
-            font-weight: 400;
-        }
-
-        .status-bar {
-            background: rgba(0, 255, 127, 0.1);
-            color: #00ff7f;
-            border: 1px solid #00ff7f;
-            padding: 8px 20px;
-            border-radius: 50px;
             font-size: 14px;
-            display: inline-block;
+            margin-bottom: 20px;
         }
 
-        .features {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 40px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 20px;
+        /* Logo ko gol frame mein dikhane ke liye */
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 3px solid #00d4ff;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
         }
 
-        .feature-item {
-            font-size: 13px;
+        h1 {
+            font-size: 36px;
+            margin: 10px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
-        .feature-item span {
-            display: block;
-            font-weight: bold;
+        .specialist-text {
             color: #00d4ff;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .status-btn {
+            background-color: rgba(0, 255, 127, 0.1);
+            border: 1px solid #00ff7f;
+            color: #00ff7f;
+            padding: 10px 25px;
+            border-radius: 30px;
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        .footer-stats {
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .stat-item {
+            font-size: 14px;
+        }
+
+        .stat-item b {
+            display: block;
+            color: #ffc107;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="badge">✓ Verified Maintenance Partner</div>
+    <div class="profile-card">
+        <div class="verified-badge">✓ Verified Maintenance Partner</div>
+        
+        <br>
 
-        <div class="logo-box">
-            <img src="island-logo.png" alt="Island IT Hub Logo">
-        </div>
+        <img src="island-logo.png" class="profile-img" alt="Island IT Hub">
 
-        <h1>ISLAND IT HUB</h1>
-        <p class="subtitle">IT Infrastructure & Security Systems Specialist</p>
+        <h1>ISLAND IT <br> HUB</h1>
+        
+        <p class="specialist-text">IT Infrastructure & Security Systems Specialist</p>
 
-        <div class="status-bar">
+        <div class="status-btn">
             ● AMC Service Active | 24/7 Support
         </div>
 
-        <div class="features">
-            <div class="feature-item">
-                <span>100%</span> Reliable
-            </div>
-            <div class="feature-item">
-                <span>Fast</span> Response
-            </div>
-            <div class="feature-item">
-                <span>Expert</span> Quality
-            </div>
+        <div class="footer-stats">
+            <div class="stat-item"><b>100%</b> Reliable</div>
+            <div class="stat-item"><b>Fast</b> Response</div>
+            <div class="stat-item"><b>Expert</b> Quality</div>
         </div>
     </div>
 
